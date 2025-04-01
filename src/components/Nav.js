@@ -1,10 +1,12 @@
 import "../App.css";
 import logo from '../images/logo.svg';
+import React from 'react';
+import {Link, Route, Routes} from "react-router-dom";
 
 
 const Nav = () => {
     return(
-        <nav className="main-nav">
+        <div className="main-navbar">
             <img src={logo} alt="Little Lemon Logo"></img>
             <input type="checkbox" id="main-menu-toggle" className="toggle-checkbox"></input>
             <label for="main-menu-toggle" className="main-menu-toggle-label">
@@ -12,15 +14,15 @@ const Nav = () => {
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
             </label>
-            <ul className="main-nav-list">
-                <li className="main-nav-link"><a href="">HOME</a></li>
-                <li className="main-nav-link"><a href="">ABOUT</a></li>
-                <li className="main-nav-link"><a href="">MENU</a></li>
-                <li className="main-nav-link"><a href="">RESERVATIONS</a></li>
-                <li className="main-nav-link"><a href="">ORDER ONLINE</a></li>
-                <li className="main-nav-link"><a href="">LOGIN</a></li>
-            </ul>
-        </nav>
+            <nav className="main-nav-links">
+                <Link to="/" className="main-nav-link-item">Home</Link>
+                <Link to="/" className="main-nav-link-item">About</Link>
+                <Link to="/" className="main-nav-link-item">Menu</Link>
+                <Link to="/" className="main-nav-link-item">Reservations</Link>
+                <Link to="/" className="main-nav-link-item">Order Online</Link>
+                <Link to="/" className="main-nav-link-item">Login</Link>
+            </nav>
+        </div>
     )
 }
 
