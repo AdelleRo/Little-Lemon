@@ -1,8 +1,67 @@
+/*Text styles*/
+.markazi-display-title{
+  font-family: 'Markazi';
+  font-size: 46pt;
+  color:#F4CE14;
+  margin: 0;
+}
+.markazi-subtitle{
+  font-family: 'Markazi';
+  font-size: 28pt;
+  margin: 0;
+}
+.karla-section-title{
+  font-family: 'Karla';
+  font-size: 18pt;
+}
+.karla-descriptive-cta{
+  font-family: 'Karla';
+  font-size: 16pt;
+}
+.card-title{
+  font-family: 'Karla';
+  font-size: 14pt;
+  font-weight: bold;
+}
+.highlight-text{
+  font-family: 'Karla';
+  font-size: 12pt;
+  font-weight: bold;
+}
+.karla-p-text{
+  font-family: 'Karla';
+  font-size: 12pt;
+}
+.gray-font{
+  color:#EDEFEE;
+}
+.black-font{
+  color:#333333;
+}
+.red-font{
+  color: #EE9972;
+}
 
+
+/*Button style*/
+.button{
+  padding: 10px 50px;
+  border-radius: 18px;
+  background-color:#F4CE14;
+  color:#333333;
+  font-weight: bold;
+  text-decoration: none;
+}
+.button:hover{
+  cursor: pointer;
+}
+.button:active{
+  background-color: #495E57;
+  color:#EDEFEE;
+}
 
 /*Nav styles*/
 .main-navbar{
-  position: fixed;
   background-color: white;
   display: flex;
   width: 100vw;
@@ -11,7 +70,7 @@
 }
 .main-navbar > img{
   height: 60px;
-  padding: 20px;
+  padding: 10px 6vw 10px 0;
 }
 #main-menu-toggle{
   display: none;
@@ -23,19 +82,11 @@
   display: none;
 }
 .main-nav-link-item{
-  display:inline-flex;
-  padding: 1vw;
   text-decoration: none;
-  align-items: center;
-}
-.main-nav-link-item{
-  text-decoration: none;
-  font-size: 18pt;
   color: #333333;
-  font-family: 'Karla';
-  padding: 5px 7px;
+  padding: 0.5em;
 }
-.main-nav-link-item:hover, .main-nav-link-item:active{
+.main-nav-link-item:hover{
   background-color: #495E57;
   color:#EDEFEE;
   border-radius: 16px;
@@ -44,30 +95,34 @@
 @media screen and (max-width: 800px) {
   .main-navbar{
     justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .main-navbar > img {
+    height: 7vh;
+    padding: 10px 6vw;
   }
   .menu-icon{
     display: initial;
     padding: 0 30px;
   }
   .main-nav-links{
-    visibility: hidden;
-    width: 100vw;
-    height: 100vh;
-    margin-top: 100px;
-    position: absolute;
+    height: 0;
     background-color: #EDEFEE;
-    display:flex;
+    display:none;
     flex-direction: column;
   }
   .main-menu-toggle-label{
-    position: fixed right;
+    top: 0;
+    right: 0;
     align-self: center;
     cursor: pointer;
   }
   .toggle-checkbox:checked ~ .main-nav-links{
-    visibility: visible;
-    position: fixed;
-    padding-top: 10px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 30px 80px 0 50px;
   }
 }
 
@@ -77,7 +132,6 @@
 .footer{
   bottom: 0;
   width: 100%;
-  position: fixed;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -106,12 +160,57 @@
 .footer-link {
   color: white;
   text-decoration: none;
-  font-size: 18pt;
-  font-family: 'Karla';
 }
 .footer-link:hover{
   text-decoration: underline;
 }
 
 
+/*Homepage styles*/
+.hero-section-homepage{
+  background-color: #495E57;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+}
+.hero-text-homepage{
+  width: 30%;
+  padding: 50px 50px 0 0;
+  justify-content: space-between;
+}
+.restaurant-food-hero-img{
+  height: 53vh;
+  margin: 70px 0 0 40px;
+  border-radius: 16px;
+}
 
+.specials{
+  padding: 100px 20vw;
+}
+.specials-text{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.specials-card{
+  width: 250px;
+  background-color: #EDEFEE;
+  border-radius: 16px 16px 0 0;
+}
+.specials-card-img{
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+.specials-card-info{
+  padding: 0 15px 10px 15px;
+}
+.specials-card-heading{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-dish-p{
+  margin-top: 0;
+}
