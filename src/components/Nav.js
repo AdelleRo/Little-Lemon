@@ -18,7 +18,7 @@ const Nav = () => {
                 <Link to="/" className="main-nav-link-item">Home</Link>
                 <Link to="/" className="main-nav-link-item">About</Link>
                 <Link to="/" className="main-nav-link-item">Menu</Link>
-                <Link to="/" className="main-nav-link-item">Reservations</Link>
+                <Link to="reservations" className="main-nav-link-item">Reservations</Link>
                 <Link to="/" className="main-nav-link-item">Order Online</Link>
                 <Link to="/" className="main-nav-link-item">Login</Link>
             </nav>
