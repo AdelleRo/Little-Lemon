@@ -56,6 +56,7 @@
 }
 .button:hover{
   cursor: pointer;
+  color:#495E57;
 }
 .button:active{
   background-color: #495E57;
@@ -382,5 +383,24 @@
   }
   .top-img{
     margin-left: 60px;
+  }
+}
+
+/*Reservation styles*/
+.reservation-form-container{
+  background-color: #495E57;
+  padding: 30px 20%;
+}
+.gallery-and-btn{
+  padding: 30px 20%;
+}
+
+
+@media screen and (max-width: 1020px){
+  .reservation-form-container{
+    padding: 30px;
+  }
+  .gallery-and-btn{
+    padding: 30px;
   }
 }
