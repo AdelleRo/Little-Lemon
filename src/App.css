@@ -1,3 +1,4 @@
+
 /*Text styles*/
 .markazi-display-title{
   font-family: 'Markazi';
@@ -45,12 +46,13 @@
 
 /*Button style*/
 .button{
-  padding: 10px 50px;
-  border-radius: 18px;
+  padding: 1vh 3vw;
+  border-radius: 16px;
   background-color:#F4CE14;
   color:#333333;
   font-weight: bold;
   text-decoration: none;
+  align-self: center;
 }
 .button:hover{
   cursor: pointer;
@@ -124,6 +126,9 @@
     display: flex;
     padding: 30px 80px 0 50px;
   }
+  .main-nav-link-item:visited, .main-nav-links{
+    display: none;
+  }
 }
 
 
@@ -141,7 +146,7 @@
 }
 .footer-logo{
   height: 200px;
-  padding: 30px;
+  padding: 30px 30px 30px 0;
 }
 .footer-nav{
   display: flex;
@@ -175,12 +180,12 @@
   height: 400px;
 }
 .hero-text-homepage{
-  width: 30%;
+  width: 35vw;
   padding: 50px 50px 0 0;
   justify-content: space-between;
 }
 .restaurant-food-hero-img{
-  height: 53vh;
+  height: 55vh;
   margin: 70px 0 0 40px;
   border-radius: 16px;
 }
@@ -193,13 +198,19 @@
   justify-content: space-between;
   margin-bottom: 30px;
 }
+.specials-cards-container{
+  display: flex;
+  justify-content: space-between;
+}
 .specials-card{
   width: 250px;
   background-color: #EDEFEE;
   border-radius: 16px 16px 0 0;
+  margin: 0 10px;
 }
 .specials-card-img{
   width: 100%;
+  height: 150px;
   border-radius: 16px 16px 0 0;
 }
 .specials-card-info{
@@ -213,4 +224,163 @@
 }
 .card-dish-p{
   margin-top: 0;
+}
+
+.testimonials{
+  background-color: #495E57;
+  text-align: center;
+  padding: 30px;
+}
+.testimonials-heading{
+  margin-bottom: 30px;
+}
+.rating-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.rating-card{
+  background-color: #EDEFEE;
+  width: 15%;
+  text-align: left;
+  margin: 2%;
+  padding: 15px;
+  border-radius: 16px;
+}
+.review-stars{
+  display: block;
+}
+.rating-person{
+  display: flex;
+  align-items: center;
+}
+.rating-person-img{
+  width: 22%;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.about-container{
+  display: flex;
+  justify-content: center;
+  padding: 5vw;
+  height: 400px;
+}
+.about-text-container{
+  width: 30%;
+  align-self: center;
+  margin-right: 10%;
+}
+/* .about-title{
+  font-size: 40pt;
+} */
+
+.about-images-container{
+  display: flex;
+  width: 25%;
+}
+.about-image{
+  height: 300px;
+  border-radius: 16pt;
+}
+.btm-img{
+  position:relative;
+  z-index: -5;
+  align-self: flex-end;
+}
+.top-img{
+  z-index: 5;
+  position:absolute;
+  margin-left: 120px;
+}
+
+
+@media screen and (max-width: 1050px){
+  .hero-section-homepage{
+    justify-content: space-evenly;
+  }
+  .hero-text-homepage{
+    padding-right: 0;
+    width: 50vw;
+  }
+  .restaurant-food-hero-img{
+    height: 35vh;
+    margin-left: 0;
+  }
+  .specials{
+    padding: 100px 5vw;
+  }
+  .rating-person-img{
+    width: 30%;
+  }
+  .rating-person{
+    margin: 10px 0;
+  }
+  .about-container{
+    justify-content: flex-start;
+  }
+  .about-text-container{
+    width: 55%;
+  }
+  .about-images-container{
+    height: 350px;
+  }
+  .about-image{
+    height: 250px;
+  }
+}
+@media screen and (max-width: 800px){
+  .markazi-display-title{
+    font-size: 30pt;
+  }
+  .markazi-subtitle{
+    font-size: 22pt;
+  }
+  .karla-descriptive-cta{
+    font-size: 14pt;
+  }
+  .card-title{
+    font-size: 12pt;
+    margin: 5px 0;
+  }
+  .highlight-text{
+    font-size: 10pt;
+    margin: 0;
+  }
+  .karla-p-text{
+    font-size: 10pt;
+    margin: 0;
+  }
+  .specials-cards-container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .specials-card{
+    display: flex;
+    width: 95%;
+    margin: 20px 0;
+  }
+  .specials-card-img{
+    width: 40%;
+    height: 100%;
+  }
+  .specials-card-info{
+    align-content: space-evenly;
+  }
+  .rating-card{
+    width: 35%;
+  }
+  .review-stars > svg{
+    width: 10%;
+  }
+  .about-images-container{
+    height: 200px;
+    align-self: center;
+  }
+  .about-image{
+    height: 150px;
+  }
+  .top-img{
+    margin-left: 60px;
+  }
 }
