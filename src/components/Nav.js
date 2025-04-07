@@ -18,7 +18,7 @@ const Nav = () => {
                 <Link to="/" className="main-nav-link-item karla-descriptive-cta">Home</Link>
                 <Link to="/#about-section" className="main-nav-link-item karla-descriptive-cta">About</Link>
                 <Link to="menu" className="main-nav-link-item karla-descriptive-cta">Menu</Link>
-                <Link to="reservations" className="main-nav-link-item karla-descriptive-cta">Reservations</Link>
+                <Link to="reservation-page" className="main-nav-link-item karla-descriptive-cta">Reservations</Link>
                 <Link to="order-online" className="main-nav-link-item karla-descriptive-cta">Order Online</Link>
                 <Link to="login" className="main-nav-link-item karla-descriptive-cta">Login</Link>
             </nav>

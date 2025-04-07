@@ -13,7 +13,7 @@ const Footer = () =>{
                         <Link to="/" className="footer-link karla-descriptive-cta">Home</Link><br/>
                         <Link to="/#about-section" className="footer-link karla-descriptive-cta">About</Link><br/>
                         <Link to="menu" className="footer-link karla-descriptive-cta">Menu</Link><br/>
-                        <Link to="reservations" className="footer-link karla-descriptive-cta">Reservations</Link><br/>
+                        <Link to="reservation-page" className="footer-link karla-descriptive-cta">Reservations</Link><br/>
                         <Link to="order-online" className="footer-link karla-descriptive-cta">Order Online</Link><br/>
                         <Link to="login" className="footer-link karla-descriptive-cta">Login</Link>
                     </div>

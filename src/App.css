@@ -391,8 +391,22 @@
   background-color: #495E57;
   padding: 30px 20%;
 }
+.booking-form{
+  display: grid;
+  max-width: 200px;
+  gap: 20px;
+}
 .gallery-and-btn{
-  padding: 30px 20%;
+  padding: 30px 10%;
+}
+.gallery{
+  text-align: center;
+
+}
+.gallery-image{
+  width: 220px;
+  border-radius: 16pt;
+  margin: 5px 1vw;
 }
 
 
@@ -402,5 +416,10 @@
   }
   .gallery-and-btn{
     padding: 30px;
+  }
+}
+@media screen and (max-width: 800px){
+  .gallery-image{
+    width: 30%;
   }
 }

@@ -21,7 +21,7 @@ const Homepage = () => {
                     <h2 className="markazi-subtitle gray-font">Chicago</h2>
                     <p className="karla-descriptive-cta gray-font hero-p">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
                     <br/>
-                    <Link to="reservations" className="button karla-descriptive-cta">Reserve a table</Link>
+                    <Link to="reservation-page" className="button karla-descriptive-cta">Reserve a table</Link>
                 </div>
                 <img src={restaurantfood} className="restaurant-food-hero-img" alt="restaurant food on the header section"/>
             </header>
