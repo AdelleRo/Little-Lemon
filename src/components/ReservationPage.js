@@ -1,14 +1,16 @@
+
 import grilledfish from "../images/grilledfishgallery.jpg";
 import restaurant from "../images/restaurantgallery.jpg";
 import lemondessert from "../images/lemon dessert.jpg";
 import BookingForm from "./BookingForm";
 
-const Reservations = () => {
+const ReservationPage = () => {
+
     return (
         <div className="reservation-page">
             <div className="reservation-form-container">
                 <h1 className="markazi-display-title reservation-title">Reservation</h1>
-                <BookingForm/>
+                <BookingForm />
             </div>
             <div className="gallery-and-btn">
                 <div class="gallery">
@@ -22,4 +24,4 @@ const Reservations = () => {
     )
 }
 
-export default Reservations;
+export default ReservationPage;

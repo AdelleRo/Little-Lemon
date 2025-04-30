@@ -391,11 +391,7 @@
   background-color: #495E57;
   padding: 30px 20%;
 }
-.booking-form{
-  display: grid;
-  max-width: 200px;
-  gap: 20px;
-}
+
 .gallery-and-btn{
   padding: 30px 10%;
 }
@@ -407,6 +403,30 @@
   width: 220px;
   border-radius: 16pt;
   margin: 5px 1vw;
+}
+
+/*Booking component styles*/
+.booking-form{
+/*   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.booking-form > div{
+  width: 50%;
+  padding: 10px 0px;
+}
+.booking-input{
+  border-radius: 6pt;
+  background-color: #EDEFEE;
+  width: 90%;
+  padding: 15px;
+}
+.reservationbtn{
+  width: 100%;
+  margin: 20px 30% 0px 30%;
 }
 
 
@@ -421,5 +441,19 @@
 @media screen and (max-width: 800px){
   .gallery-image{
     width: 30%;
+  }
+}
+@media screen and (max-width: 450px){
+  .booking-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .booking-input{
+    border-radius: 6pt;
+    background-color: #EDEFEE;
+    width: 100%;
+    padding: 15px;
+    display: block;
   }
 }
