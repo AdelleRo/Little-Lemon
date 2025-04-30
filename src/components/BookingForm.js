@@ -1,16 +1,29 @@
 import {useState} from "react";
+import { fetchAPI, submitAPI } from '../APIfix';
 import React from 'react';
 
-
-
 const BookingForm = () => {
+    const [availableTimes, setAvailableTimes] = useState(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]);
 
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
     const [guests, setGuests] = useState("");
     const [occasion, setOccasion] = useState("");
-    const [availableTimes, setAvailableTimes] = useState(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]);
 
+    let today = new Date();
+
+    function updateTimes(){
+        setAvailableTimes(fetchAPI(date))
+    }
+
+    function initializeTimes(){
+        setAvailableTimes(fetchAPI(today))
+    }
+
+    const handleDateChange = (e) => {
+        setDate(e.target.value);
+        updateTimes();
+    }
 
     const clearForm = () => {
         setDate("");
@@ -53,7 +66,7 @@ const BookingForm = () => {
                     className="booking-input"
                     id="booking-date"
                     value={date}
-                    onChange={(e) => setDate(e.target.value)}
+                    onChange={handleDateChange}
                 />
             </div>
             <div>
@@ -63,7 +76,6 @@ const BookingForm = () => {
                     id="booking-time"
                     value={time}
                     onChange={(e) => setTime(e.target.value)}
-
                 >
                     {availableTimes.map((times) => {return <option>{times}</option>})}
                 </select>

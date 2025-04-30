@@ -1,5 +1,4 @@
 import {Route, Routes} from "react-router-dom";
-//import {useState} from "react";
 import Homepage from "./Homepage";
 import About from "./About";
 import Menu from "./Menu";
@@ -11,10 +10,6 @@ import Login from "./Login";
 
 
 const Main = () => {
-
-
-
-
 
     return(
         <Routes>

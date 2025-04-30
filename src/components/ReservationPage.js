@@ -1,10 +1,10 @@
-
 import grilledfish from "../images/grilledfishgallery.jpg";
 import restaurant from "../images/restaurantgallery.jpg";
 import lemondessert from "../images/lemon dessert.jpg";
 import BookingForm from "./BookingForm";
 
 const ReservationPage = () => {
+
 
     return (
         <div className="reservation-page">
