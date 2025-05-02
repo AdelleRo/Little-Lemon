@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { useNavigate } from "react-router-dom";
 import pasta from "../images/pasta.jpg";
 import foodgallery from "../images/foodgallery.jpg";
 import bruschetta from "../images/bruschetta.jpg";
@@ -8,6 +9,7 @@ const BookingConfirmation = () => {
     const [lastname, setLastname] = useState("");
     const [email, setEmail] = useState("");
     const [phonenumber, setPhonenumber] = useState("");
+    const navigate = useNavigate();
 
     const clearForm = () => {
         setFirstname("");
@@ -18,6 +20,8 @@ const BookingConfirmation = () => {
     const handleSubmit = (e) =>{
         e.preventDefault();
         clearForm();
+        alert("Reservation confirmed!");
+        navigate("/");
     }
 
     return (
@@ -78,12 +82,6 @@ const BookingConfirmation = () => {
                             placeholder="xxx xxx xxxx"
 
                         />
-                    </div>
-                    <div>
-
-                    </div>
-                    <div>
-
                     </div>
                     <input
                         type="submit"
